@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Trivio Quiz</title>
+  <link rel="stylesheet" href="sidebar.css">
+</head>
+<body>
+  <div class="sidebar-container">
+    <div class="logo">
+      <img src="https://i.postimg.cc/CKf2zmXb/TRIVIO-removebg-preview-2.png" alt="Trivio Logo">
+    </div>
+    <div id="video-preview" class="card"></div>
+    <button id="generate-btn" class="btn primary">
+      <span class="btn-text">Generate Questions</span>
+      <span class="loader" style="display: none;"></span>
+    </button>
+    <div id="quiz-container" class="card" style="display: none;">
+      <h2 id="question" class="question-title">Waiting for next question...</h2>
+      <div class="answers">
+        <button id="answer-a" class="answer-btn" style="display: none;">Option A</button>
+        <button id="answer-b" class="answer-btn" style="display: none;">Option B</button>
+        <button id="answer-c" class="answer-btn" style="display: none;">Option C</button>
+        <button id="answer-d" class="answer-btn" style="display: none;">Option D</button>
+      </div>
+      <button id="continue" class="btn secondary" style="display: none;">Continue</button>
+    </div>
+    <div id="score-container" class="card" style="display: none;">
+      <h2 class="score-title">Quiz Results</h2>
+      <p id="score-text" class="score-value"></p>
+      <h3 class="correct-title">Correct Answers:</h3>
+      <ul id="correct-answers" class="correct-list"></ul>
+      <button id="restart-btn" class="btn primary">Restart Quiz</button>
+    </div>
+  </div>
+  <script src="sidebar.js"></script>
+</body>
+</html>
